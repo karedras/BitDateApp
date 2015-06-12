@@ -14,6 +14,9 @@
 		7CDC49831B2A4A1300291E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC49821B2A4A1300291E4D /* Images.xcassets */; };
 		7CDC49861B2A4A1300291E4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC49841B2A4A1300291E4D /* LaunchScreen.xib */; };
 		7CDC49921B2A4A1300291E4D /* BitDateAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC49911B2A4A1300291E4D /* BitDateAppTests.swift */; };
+		7CDC499D1B2A4B2B00291E4D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC499C1B2A4B2B00291E4D /* CardView.swift */; };
+		7CDC499F1B2A7CB400291E4D /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC499E1B2A7CB400291E4D /* SwipeView.swift */; };
+		7CDC49A21B2A814200291E4D /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC49A11B2A814200291E4D /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		7CDC498B1B2A4A1300291E4D /* BitDateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitDateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDC49901B2A4A1300291E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CDC49911B2A4A1300291E4D /* BitDateAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDateAppTests.swift; sourceTree = "<group>"; };
+		7CDC499C1B2A4B2B00291E4D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7CDC499E1B2A7CB400291E4D /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		7CDC49A11B2A814200291E4D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				7CDC49781B2A4A1300291E4D /* AppDelegate.swift */,
-				7CDC497D1B2A4A1300291E4D /* ViewController.swift */,
+				7CDC499B1B2A4AF500291E4D /* Views */,
+				7CDC49A01B2A810100291E4D /* ViewControllers */,
 				7CDC497F1B2A4A1300291E4D /* Main.storyboard */,
 				7CDC49821B2A4A1300291E4D /* Images.xcassets */,
 				7CDC49841B2A4A1300291E4D /* LaunchScreen.xib */,
@@ -113,6 +120,24 @@
 				7CDC49901B2A4A1300291E4D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CDC499B1B2A4AF500291E4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC499C1B2A4B2B00291E4D /* CardView.swift */,
+				7CDC499E1B2A7CB400291E4D /* SwipeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7CDC49A01B2A810100291E4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC497D1B2A4A1300291E4D /* ViewController.swift */,
+				7CDC49A11B2A814200291E4D /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +242,9 @@
 			files = (
 				7CDC497E1B2A4A1300291E4D /* ViewController.swift in Sources */,
 				7CDC49791B2A4A1300291E4D /* AppDelegate.swift in Sources */,
+				7CDC49A21B2A814200291E4D /* CardsViewController.swift in Sources */,
+				7CDC499D1B2A4B2B00291E4D /* CardView.swift in Sources */,
+				7CDC499F1B2A7CB400291E4D /* SwipeView.swift in Sources */,
 				7CDC497C1B2A4A1300291E4D /* BitDateApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
