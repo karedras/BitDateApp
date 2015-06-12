@@ -18,9 +18,16 @@ class SwipeView: UIView {
     }
     
     weak var delegate: SwipeViewDelegate?
+       
+    var innerView: UIView? {
+        didSet {
+            if let v = innerView { // if innerView exists set innerView to v
+                addSubview(v)
+                v.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+            }
+        }
+    }
     
-    private let card: CardView = CardView()
-   
     private var originalPoint:  CGPoint?
     
     required init(coder aDecoder: NSCoder) {
@@ -40,11 +47,9 @@ class SwipeView: UIView {
     
     private func initialize() {
         self.backgroundColor = UIColor.redColor()
-        addSubview(card)
         
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
         
-        card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
     }
     
     func dragged(gestureRecognizer: UIPanGestureRecognizer) {
@@ -70,7 +75,7 @@ class SwipeView: UIView {
                     resetViewPositionAndTransformations()
                 }
                 else {
-                    swipe(distance.x > 0 ? .Right : .Left)  //Operador Ternario
+                    swipe(distance.x > 0 ? Direction.Right : Direction.Left)  //Operador Ternario
                 }
                 
             
@@ -88,8 +93,14 @@ class SwipeView: UIView {
         if s == .Left {
             parentWidth *= -1
         }
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
+        
+        UIView.animateWithDuration(0.2, animations: {
             self.center.x = self.frame.origin.x + parentWidth
+            }, completion: {
+                success in
+                if let d = self.delegate {
+                    s == Direction.Right ? d.swipedRight() : d.swipedLeft()
+                }
         })
     }
     
