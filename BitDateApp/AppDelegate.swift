@@ -27,6 +27,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        testObject.save()
         PFFacebookUtils.initializeFacebook()
         
+        var storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController:UIViewController
+        
+        if currentUser() != nil {
+            initialViewController = storyBoard.instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+            
+        }
+        else {
+            initialViewController = storyBoard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+            
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
     

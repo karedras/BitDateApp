@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3DAB2A739CB695E3D2C51961 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 568CB5C6F231A79AE4C9FE2B /* libPods.a */; };
 		7C23BA831B2BB66F0070323C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23BA821B2BB66F0070323C /* LoginViewController.swift */; };
+		7C23BA861B2BC3400070323C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23BA851B2BC3400070323C /* User.swift */; };
+		7C23BA881B2BC7810070323C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23BA871B2BC7810070323C /* ProfileViewController.swift */; };
 		7C6606D51B2B9912004CC9EC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6606D31B2B9912004CC9EC /* Parse.framework */; };
 		7C6606D61B2B9912004CC9EC /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6606D41B2B9912004CC9EC /* ParseFacebookUtils.framework */; };
 		7C6606D81B2B99B3004CC9EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6606D71B2B99B3004CC9EC /* AudioToolbox.framework */; };
@@ -49,6 +51,8 @@
 		37ACCDA998E1240487A95304 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		568CB5C6F231A79AE4C9FE2B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C23BA821B2BB66F0070323C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C23BA851B2BC3400070323C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7C23BA871B2BC7810070323C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7C6606D31B2B9912004CC9EC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7C6606D41B2B9912004CC9EC /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		7C6606D71B2B99B3004CC9EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7C23BA841B2BC3220070323C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C23BA851B2BC3400070323C /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		7C6606D21B2B98B4004CC9EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				7CDC49781B2A4A1300291E4D /* AppDelegate.swift */,
+				7C23BA841B2BC3220070323C /* Data */,
 				7CDC499B1B2A4AF500291E4D /* Views */,
 				7CDC49A01B2A810100291E4D /* ViewControllers */,
 				7CDC497F1B2A4A1300291E4D /* Main.storyboard */,
@@ -218,6 +231,7 @@
 				7CDC497D1B2A4A1300291E4D /* ViewController.swift */,
 				7C23BA821B2BB66F0070323C /* LoginViewController.swift */,
 				7CDC49A11B2A814200291E4D /* CardsViewController.swift */,
+				7C23BA871B2BC7810070323C /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -361,7 +375,9 @@
 				7CDC497E1B2A4A1300291E4D /* ViewController.swift in Sources */,
 				7CDC49791B2A4A1300291E4D /* AppDelegate.swift in Sources */,
 				7CDC49A21B2A814200291E4D /* CardsViewController.swift in Sources */,
+				7C23BA861B2BC3400070323C /* User.swift in Sources */,
 				7CDC499D1B2A4B2B00291E4D /* CardView.swift in Sources */,
+				7C23BA881B2BC7810070323C /* ProfileViewController.swift in Sources */,
 				7CDC499F1B2A7CB400291E4D /* SwipeView.swift in Sources */,
 				7CDC497C1B2A4A1300291E4D /* BitDateApp.xcdatamodeld in Sources */,
 			);
