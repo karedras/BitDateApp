@@ -8,4 +8,6 @@
 
 #import <Parse/Parse.h>
 //import Parse Header
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "FacebookSDK/FacebookSDK.h"   //considered Local Framework thats why we use ""
 
